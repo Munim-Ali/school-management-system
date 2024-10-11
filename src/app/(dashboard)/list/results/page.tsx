@@ -39,11 +39,13 @@ const columns = [
   {
     header: "Class",
     accessor: "class",
+    className: "hidden md:table-cell",
   },
 
   {
     header: "Date",
     accessor: "date",
+    className: "hidden md:table-cell",
   },
 
   {
@@ -62,8 +64,8 @@ const ResultsList = () => {
           <h3 className="font-semibold">{item.subject}</h3>
         </div>
       </td>
-      <td className="hidden md:table-cell">{item.student}</td>
-      <td className="hidden md:table-cell">{item.score}</td>
+      <td className="">{item.student}</td>
+      <td className="">{item.score}</td>
       <td className="hidden md:table-cell">{item.teacher}</td>
       <td className="hidden md:table-cell">{item.class}</td>
       <td className="hidden md:table-cell">{item.date}</td>

@@ -50,9 +50,9 @@ const AssignmentsList = () => {
           <h3 className="font-semibold">{item.subject}</h3>
         </div>
       </td>
-      <td className="hidden md:table-cell">{item.class}</td>
+      <td className="">{item.class}</td>
       <td className="hidden md:table-cell">{item.teacher}</td>
-      <td className="hidden md:table-cell">{item.dueDate}</td>
+      <td className="">{item.dueDate}</td>
 
       <td>
         <div className="flex items-center gap-2">

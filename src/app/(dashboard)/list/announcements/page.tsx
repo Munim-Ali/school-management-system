@@ -22,6 +22,7 @@ const columns = [
   {
     header: "Class",
     accessor: "class",
+    className: "hidden md:table-cell",
   },
   {
     header: "Date",
@@ -45,7 +46,7 @@ const AnnouncementsList = () => {
         </div>
       </td>
       <td className="hidden md:table-cell">{item.class}</td>
-      <td className="hidden md:table-cell">{item.date}</td>
+      <td className="">{item.date}</td>
 
       <td>
         <div className="flex items-center gap-2">

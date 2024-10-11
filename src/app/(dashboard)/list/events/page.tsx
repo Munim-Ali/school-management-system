@@ -24,6 +24,7 @@ const columns = [
   {
     header: "Class",
     accessor: "class",
+    className: "hidden lg:table-cell",
   },
   {
     header: "Date",
@@ -32,7 +33,6 @@ const columns = [
   {
     header: "Start Time",
     accessor: "startTime",
-    className: "hidden lg:table-cell",
   },
   {
     header: "End Time",
@@ -56,9 +56,9 @@ const EventsList = () => {
         </div>
       </td>
       <td className="hidden md:table-cell">{item.class}</td>
-      <td className="hidden md:table-cell">{item.date}</td>
-      <td className="hidden md:table-cell">{item.startTime}</td>
-      <td className="hidden md:table-cell">{item.endTime}</td>
+      <td className="">{item.date}</td>
+      <td className="">{item.startTime}</td>
+      <td className="">{item.endTime}</td>
 
       <td>
         <div className="flex items-center gap-2">
